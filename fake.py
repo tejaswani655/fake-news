@@ -1,8 +1,8 @@
 import streamlit as st
 import joblib
 
-vectorizer = joblib.load("vectorizer.jb")
-model= joblib.load ("1r_model.jb")
+vectorizer = joblib.load("vectorizer.joblib")
+model= joblib.load ("1r_model.joblib")
 
 st.title("Fake News Detector")
 st.write("Enter a News Article below to check whether it is Fake or Real. ")
