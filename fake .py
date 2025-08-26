@@ -1,8 +1,8 @@
 import streamlit as st
 import pickle
 
-LR = pickle.load(open("model.pkl", "rb"))
-vectorization = pickle.load(open("vectorizer.pkl", "rb"))
+LR = pickle.load(open("fkmodel.pkl", "rb"))
+vectorization = pickle.load(open("fkvectorizer.pkl", "rb"))
 
 st.title("Fake News Detector")
 st.write("Enter a News Article below to check whether it is Fake or Real. ")
